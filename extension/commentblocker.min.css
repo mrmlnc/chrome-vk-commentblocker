@@ -1,0 +1,1 @@
+.wall_module .reply_link_wrap .reply_link{visibility:hidden!important}.wall_module .replies_wrap{display:none!important;visibility:hidden!important}body:after{position:fixed;content:"No Comments!";top:5px;right:5px;padding:6px 12px;background-color:#ffc;border:1px solid #ddd;z-index:9999}
