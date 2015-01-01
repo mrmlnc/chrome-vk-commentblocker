@@ -3,14 +3,14 @@
 
   "name": "VK Comment Blocker",
   "short_name": "VKCommentBlocker",
-  "description": "Show/Hide Vkontakte Comments.",
+  "description": "Удобный способ скрыть комментарии в новостной ленте и группах.",
   "version": "0.1.0",
 
   "permissions": [ "activeTab" ],
 
   "browser_action": {
     "default_icon": "icon_16.png",
-    "default_title": "Toggle Comments"
+    "default_title": "Переключить вид комментариев"
   },
 
   "icons": {

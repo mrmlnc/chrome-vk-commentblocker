@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .wall_module .reply_link_wrap .reply_link {
   visibility: hidden !important;
 }
@@ -9,7 +11,7 @@
 
 body:after {
   position: fixed;
-  content: "No Comments!";
+  content: "Без комментариев!";
   top: 5px;
   right: 5px;
   padding: 6px 12px;

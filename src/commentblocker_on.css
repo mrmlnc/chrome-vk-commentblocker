@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .wall_module .reply_link_wrap .reply_link {
   visibility: visible !important;
 }
@@ -8,6 +10,6 @@
 }
 
 body:after {
-  content: "Comments!";
+  content: "С комментариями!";
   background-color: #99ffcc;
 }
