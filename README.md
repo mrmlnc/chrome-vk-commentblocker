@@ -1,22 +1,21 @@
 Vk Comment Blocker
 ==============
 
-Show/Hide Vkontakte Comments.
+VK Comment Blocker — это расширение для браузера Google Chrome, которое позволяет скрывать и показывать комментарии в соответствии с предварительно настроенным списком разрешенных страниц.
 
-Support
+Не всем нравятся те комментарии, что оставляют другие пользователи социальной сети. Комментарии могут звучать оскорбительно, глупо и, чаще всего, абсурдно. С помощью этого расширения можно скрыть комментарии в ленте новостей, в постах, под фото и видео. Также возможно создание белого списка разрешенных страниц (групп), где комментарии будут отображаться — такая функция полезна тем, кто хочет оградить себя или своих близких от полёта фантазий других пользователей социальной сети.
+
+Поддержка
 --------------
 
-Desktop Google Chrome
+Десктопный Google Chrome
 
-Installation
+Установка
 --------------
 
- * Download the files you need from the this repository;
- * Go to «How to use»;
+Перейдите в [Chrome Web Store](https://chrome.google.com/webstore/detail/vk-comment-blocker/hcblijjkmabjdppajebmbmmkjnkflpbl) и согласитесь на установку.
 
-Soon to be available in the [**chrome web store**](https://chrome.google.com/webstore)!
-
-How to use
+Разработка
 --------------
 
 Chrome gives you a quick way of loading up your working directory for testing:
