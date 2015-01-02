@@ -1,0 +1,44 @@
+{
+  "popup": {
+    "message": "VK Comment Blocker"
+  },
+  "add": {
+    "message": "Добавить исключение"
+  },
+  "remove": {
+    "message": "Удалить исключение"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "options": {
+    "message": "Настройки"
+  },
+  "options_title": {
+    "message": "Настройки VK Comment Blocker"
+  },
+  "options_exception": {
+    "message": "Нет исключений"
+  },
+  "action": {
+    "message": "Дейсвие"
+  },
+  "number": {
+    "message": "#"
+  },
+  "title": {
+    "message": "Название"
+  },
+  "url": {
+    "message": "Адрес"
+  },
+  "error_input": {
+    "message": "Пожалуйста, заполните оба поля."
+  },
+  "export": {
+    "message": "Экспортировать лист"
+  },
+  "import": {
+    "message": "Импортировать лист"
+  }
+}

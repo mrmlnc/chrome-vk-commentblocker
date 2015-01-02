@@ -1,0 +1,1 @@
+(function(){document.addEventListener("DOMContentLoaded",function(){var e,t,n,o,i;for(n=document.getElementsByTagName("*"),t=o=0,i=n.length;i>=0?i>o:o>i;t=i>=0?++o:--o)(e=n[t].dataset.i18n)&&(n[t].innerHTML=chrome.i18n.getMessage(e))})}).call(this);

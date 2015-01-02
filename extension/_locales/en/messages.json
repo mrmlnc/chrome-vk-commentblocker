@@ -1,0 +1,44 @@
+{
+  "popup": {
+    "message": "VK Comment Blocker"
+  },
+  "add": {
+    "message": "Adding exception"
+  },
+  "remove": {
+    "message": "Remove exception"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "options": {
+    "message": "Settings"
+  },
+  "options_title": {
+    "message": "Settings VK Comment Blocker"
+  },
+  "options_exception": {
+    "message": "No exceptions"
+  },
+  "action": {
+    "message": "Action"
+  },
+  "number": {
+    "message": "#"
+  },
+  "title": {
+    "message": "Name"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "error_input": {
+    "message": "Please fill in both text boxes."
+  },
+  "export": {
+    "message": "Export exception list"
+  },
+  "import": {
+    "message": "Import exception list"
+  }
+}

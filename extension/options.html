@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>VK Comment Blocker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/options.js"></script>
+    <script src="scripts/i18n.js"></script>
+  </head>
+  <body>
+    <h1 class="options-title" data-i18n="options_title"></h1>
+    <div class="options-body">
+      <div class="options-exception" id="optionsExceptionMessage" data-i18n="options_exception"></div>
+      <table id="exceptionTable">
+        <thead>
+          <tr>
+            <th data-i18n="number"></th>
+            <th data-i18n="title"></th>
+            <th data-i18n="url"></th>
+            <th data-i18n="action"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="options-footer">
+      <div class="footer-left">
+        <button type="button" class="btn btn-add" id="addExceptionModal" data-i18n="add"></button>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="btn btn-link" id="exportListException" data-i18n="export"></a>
+        |
+        <button class="btn btn-link" id="importListException" data-i18n="import"></button>
+        <input type="file" id="importFileListException" accept=".json" hidden>
+      </div>
+    </div>
+
+    <!-- Popup Adding Exception -->
+    <div class="modal" id="modalAddingException">
+      <div class="modal-wrapper">
+        <div class="modal-header" data-i18n="add"></div>
+        <div class="modal-body">
+          <label for="exceptionTitle">
+            <span data-i18n="title"></span>
+            <input type="text" name="exception_title" class="form-input" placeholder="title" autofocus>
+          </label>
+          <label for="exceptionUrl">
+            <span data-i18n="url"></span>
+            <input type="text" name="exception_url" class="form-input" placeholder="url">
+          </label>
+          <div class="error-message" id="errorMessage" data-i18n="error_input"></div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-add" data-tools="add" data-i18n="add"></button>
+          <br>
+          <button class="btn btn-link" data-tools="cancel" data-i18n="cancel"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
