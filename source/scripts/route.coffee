@@ -18,12 +18,12 @@ document.addEventListener "DOMContentLoaded", ->
     currentWindow: true
     active: true
   , (tabs) ->
-    if tabs[0].url.indexOf('http://vk.com/') is -1
-      addExceptionPopup.disabled = true
-    else
+    if tabs[0].url.indexOf('://vk.com/') > -1
       tabUrl = new URL(tabs[0].url)
       title = tabs[0].title
       url = tabUrl.pathname
+    else
+      addExceptionPopup.disabled = true
     return
 
   #

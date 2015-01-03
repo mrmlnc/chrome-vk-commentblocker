@@ -1,44 +1,62 @@
 {
-  "popup": {
+  "app_name": {
     "message": "VK Comment Blocker"
   },
-  "add": {
+  "app_description": {
+    "message": "A convenient way to hide comments in the news and groups."
+  },
+  "browser_action": {
+    "message": "Manage exceptions"
+  },
+  "mode_enable": {
+    "message": "No comments!"
+  },
+  "mode_disable": {
+    "message": "Comments!"
+  },
+  "exception_add": {
     "message": "Adding exception"
   },
-  "remove": {
+  "exception_remove": {
     "message": "Remove exception"
   },
-  "cancel": {
-    "message": "Cancel"
+  "exception_remove_confirm": {
+    "message": "Are you sure?"
   },
-  "options": {
+  "exception_options": {
     "message": "Settings"
   },
   "options_title": {
     "message": "Settings VK Comment Blocker"
   },
-  "options_exception": {
-    "message": "No exceptions"
+  "options_welcome": {
+    "message": "Please add exceptions if necessary."
   },
-  "action": {
-    "message": "Action"
+  "options_exceptions_ordinal": {
+    "message": "Ordinal"
   },
-  "number": {
-    "message": "#"
+  "options_exceptions_title": {
+    "message": "Title"
   },
-  "title": {
-    "message": "Name"
-  },
-  "url": {
+  "options_exceptions_url": {
     "message": "URL"
   },
-  "error_input": {
-    "message": "Please fill in both text boxes."
+  "options_exceptions_actions": {
+    "message": "Actions"
   },
-  "export": {
-    "message": "Export exception list"
+  "options_adding_validation": {
+    "message": "The <b>Title</b> and <b>URL</b> field is required."
   },
-  "import": {
-    "message": "Import exception list"
+  "options_exceptions_export": {
+    "message": "Export list"
+  },
+  "options_exceptions_import": {
+    "message": "Import list"
+  },
+  "exception_exists": {
+    "message": "Exception already exists!"
+  },
+  "cancel": {
+    "message": "Cancel"
   }
 }

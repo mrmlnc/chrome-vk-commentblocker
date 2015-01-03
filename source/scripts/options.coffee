@@ -4,7 +4,7 @@ document.addEventListener "DOMContentLoaded", ->
   importListException = document.getElementById('importListException')
   importFileListException = document.getElementById('importFileListException')
   modal = document.getElementById('modalAddingException')
-  noExceptionMessage = document.getElementById('optionsExceptionMessage')
+  noExceptionMessage = document.getElementById('optionsWelcome')
   exceptionTable = document.getElementById('exceptionTable')
   title = document.getElementsByName('exception_title')[0]
   url = document.getElementsByName('exception_url')[0]
@@ -38,7 +38,7 @@ document.addEventListener "DOMContentLoaded", ->
     modal.style.display = 'none'
     errorMessage.style.display = 'none'
     title.value = ''
-    url.value = ''
+    url.value = '/'
     return
 
   #
@@ -56,7 +56,7 @@ document.addEventListener "DOMContentLoaded", ->
 
     for i in [0...buttons.length]
       buttons[i].onclick = (e) ->
-        options.remove(@.dataset.id - 1)
+        options.remove(@.dataset.id - 1) if confirm chrome.i18n.getMessage('exception_remove_confirm')
         return
     return
 
@@ -65,6 +65,7 @@ document.addEventListener "DOMContentLoaded", ->
   #
   handleFileSelect = (event) ->
     file = event.target.files[0]
+
     if file
       saveListException(file)
       location.reload()
@@ -99,9 +100,11 @@ document.addEventListener "DOMContentLoaded", ->
 
     save: (title, url) ->
       if title.value isnt '' and url.value isnt ''
-        saveException(title.value, url.value)
-        modal.querySelector('button[data-tools="cancel"]').click()
-        location.reload()
+        if saveException(title.value, url.value)
+          alert chrome.i18n.getMessage('exception_exists')
+          modal.querySelector('button[data-tools="cancel"]').click()
+        else
+          location.reload()
       else
         errorMessage.style.display = 'block'
       return

@@ -9,7 +9,10 @@ viewException = (data) ->
     row.insertCell(0).innerHTML = i + 1
     row.insertCell(1).innerHTML = item.title
     row.insertCell(2).innerHTML = item.url
-    row.insertCell(3).innerHTML = '<button type="button" class="btn btn-remove" data-tools="remove" data-i18n="remove" data-id=' + (i + 1) + '></button>'
+    row.insertCell(3).innerHTML = \
+      '<button type="button" class="btn btn-remove" data-tools="remove" data-id=' + \
+      (i + 1) + '>' + chrome.i18n.getMessage('exception_remove') + '</button>'
+
     tbody.appendChild(row)
 
   return tbody
@@ -17,6 +20,10 @@ viewException = (data) ->
 saveException = (title, url) ->
   if localStorage['vkCommentBlocker']
     data = loadException()
+    for i in [0...data['items'].length]
+      dataUrl = data['items'][i].url
+      if dataUrl.indexOf(url) > -1
+        return true
   else
     data = JSON.parse('{"items":[]}')
 
@@ -39,5 +46,8 @@ saveListException = (file) ->
 removeException = (id) ->
   data = loadException()
   data['items'].splice(id, 1)
-  localStorage['vkCommentBlocker'] = JSON.stringify(data)
+  if data['items'].length is 0
+    localStorage.clear()
+  else
+    localStorage['vkCommentBlocker'] = JSON.stringify(data)
   return

@@ -5,6 +5,7 @@
 // Variables
 // --------------------------------------------------------------------------
 @clr-brand:                            #6287ae;
+@clr-error:                            spin(@clr-brand, 150);
 
 @body-color:                           #444;
 @body-background:                      #fff;
@@ -24,13 +25,13 @@
 @btn-border-radius:                    3px;
 @btn-disabled-opacity:                 .65;
 
-@btn-add-background:                   @clr-brand;
-@btn-add-hover-background:             #678eb5;
+@btn-add-background:                   spin(@clr-brand, 5);
+@btn-add-hover-background:             lighten(@btn-add-background, 7);
 @btn-add-color:                        #fff;
 @btn-add-hover-color:                  #fff;
 
-@btn-remove-background:                @clr-brand;
-@btn-remove-hover-background:          #678eb5;
+@btn-remove-background:                @clr-error;
+@btn-remove-hover-background:          lighten(@btn-remove-background, 7);
 @btn-remove-color:                     #fff;
 @btn-remove-hover-color:               #fff;
 
@@ -253,7 +254,7 @@ label {
 
     .error-message {
       display: none;
-      color: red;
+      color: @clr-error;
     }
   }
   &-footer {

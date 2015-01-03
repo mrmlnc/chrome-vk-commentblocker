@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
 
-  "name": "VK Comment Blocker",
+  "name": "__MSG_app_name__",
   "short_name": "VKCommentBlocker",
-  "description": "Удобный способ скрыть комментарии в новостной ленте и группах.",
-  "version": "0.5.1",
+  "description": "__MSG_app_description__",
+  "version": "0.6.0",
 
   "default_locale": "ru",
 
@@ -18,7 +18,7 @@
 
   "browser_action": {
     "default_icon": "icon_16.png",
-    "default_title": "Переключить вид комментариев",
+    "default_title": "__MSG_browser_action__",
     "default_popup": "popup.html"
   },
 

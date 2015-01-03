@@ -10,14 +10,14 @@
   <body>
     <h1 class="options-title" data-i18n="options_title"></h1>
     <div class="options-body">
-      <div class="options-exception" id="optionsExceptionMessage" data-i18n="options_exception"></div>
+      <div class="options-exception" id="optionsWelcome" data-i18n="options_welcome"></div>
       <table id="exceptionTable">
         <thead>
           <tr>
-            <th data-i18n="number"></th>
-            <th data-i18n="title"></th>
-            <th data-i18n="url"></th>
-            <th data-i18n="action"></th>
+            <th data-i18n="options_exceptions_ordinal"></th>
+            <th data-i18n="options_exceptions_title"></th>
+            <th data-i18n="options_exceptions_url"></th>
+            <th data-i18n="options_exceptions_actions"></th>
           </tr>
         </thead>
         <tbody>
@@ -26,12 +26,12 @@
     </div>
     <div class="options-footer">
       <div class="footer-left">
-        <button type="button" class="btn btn-add" id="addExceptionModal" data-i18n="add"></button>
+        <button type="button" class="btn btn-add" id="addExceptionModal" data-i18n="exception_add"></button>
       </div>
       <div class="footer-right">
-        <a href="#" class="btn btn-link" id="exportListException" data-i18n="export"></a>
+        <a href="#" class="btn btn-link" id="exportListException" data-i18n="options_exceptions_export"></a>
         |
-        <button class="btn btn-link" id="importListException" data-i18n="import"></button>
+        <button class="btn btn-link" id="importListException" data-i18n="options_exceptions_import"></button>
         <input type="file" id="importFileListException" accept=".json" hidden>
       </div>
     </div>
@@ -39,20 +39,20 @@
     <!-- Popup Adding Exception -->
     <div class="modal" id="modalAddingException">
       <div class="modal-wrapper">
-        <div class="modal-header" data-i18n="add"></div>
+        <div class="modal-header" data-i18n="exception_add"></div>
         <div class="modal-body">
           <label for="exceptionTitle">
-            <span data-i18n="title"></span>
-            <input type="text" name="exception_title" class="form-input" placeholder="title" autofocus>
+            <span data-i18n="options_exceptions_title"></span>
+            <input type="text" name="exception_title" class="form-input" placeholder="..." autofocus>
           </label>
           <label for="exceptionUrl">
-            <span data-i18n="url"></span>
-            <input type="text" name="exception_url" class="form-input" placeholder="url">
+            <span data-i18n="options_exceptions_url"></span>
+            <input type="text" name="exception_url" class="form-input" value="/">
           </label>
-          <div class="error-message" id="errorMessage" data-i18n="error_input"></div>
+          <div class="error-message" id="errorMessage" data-i18n="options_adding_validation"></div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-add" data-tools="add" data-i18n="add"></button>
+          <button class="btn btn-add" data-tools="add" data-i18n="exception_add"></button>
           <br>
           <button class="btn btn-link" data-tools="cancel" data-i18n="cancel"></button>
         </div>

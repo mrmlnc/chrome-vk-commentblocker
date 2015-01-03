@@ -1,44 +1,62 @@
 {
-  "popup": {
+  "app_name": {
     "message": "VK Comment Blocker"
   },
-  "add": {
+  "app_description": {
+    "message": "Удобный способ скрыть комментарии в новостной ленте и группах."
+  },
+  "browser_action": {
+    "message": "Управление исключениями"
+  },
+  "mode_enable": {
+    "message": "Без комментариев!"
+  },
+  "mode_disable": {
+    "message": "С комментариями!"
+  },
+  "exception_add": {
     "message": "Добавить исключение"
   },
-  "remove": {
+  "exception_remove": {
     "message": "Удалить исключение"
   },
-  "cancel": {
-    "message": "Отмена"
+  "exception_remove_confirm": {
+    "message": "Вы уверены, что хотите удалить это исключение?"
   },
-  "options": {
+  "exception_options": {
     "message": "Настройки"
   },
   "options_title": {
     "message": "Настройки VK Comment Blocker"
   },
-  "options_exception": {
-    "message": "Нет исключений"
+  "options_welcome": {
+    "message": "Пожалуйста, добавьте исключения, если это необходимо."
   },
-  "action": {
-    "message": "Дейсвие"
+  "options_exceptions_ordinal": {
+    "message": "№"
   },
-  "number": {
-    "message": "#"
+  "options_exceptions_title": {
+    "message": "Заголовок"
   },
-  "title": {
-    "message": "Название"
+  "options_exceptions_url": {
+    "message": "URL"
   },
-  "url": {
-    "message": "Адрес"
+  "options_exceptions_actions": {
+    "message": "Действия"
   },
-  "error_input": {
-    "message": "Пожалуйста, заполните оба поля."
+  "options_adding_validation": {
+    "message": "Поля <b>Заголовок</b> и <b>URL</b> должны быть заполнены."
   },
-  "export": {
-    "message": "Экспортировать лист"
+  "options_exceptions_export": {
+    "message": "Экспорт списка"
   },
-  "import": {
-    "message": "Импортировать лист"
+  "options_exceptions_import": {
+    "message": "Импорт списка"
+  },
+  "exception_exists": {
+    "message": "Исключение уже существует!"
+  },
+  "cancel": {
+    "message": "Отмена"
   }
 }
