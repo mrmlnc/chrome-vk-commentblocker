@@ -119,7 +119,6 @@ document.addEventListener "DOMContentLoaded", ->
       blob = new Blob([json],
         type: "application/json"
       )
-      link.download = 'VKCommentBlocker.json'
       link.href = URL.createObjectURL(blob)
       return
 

@@ -4,14 +4,12 @@
   "name": "__MSG_app_name__",
   "short_name": "VKCommentBlocker",
   "description": "__MSG_app_description__",
-  "version": "0.6.0",
+  "version": "0.6.2",
 
   "default_locale": "ru",
 
   "permissions": [
     "tabs",
-    "activeTab",
-    "storage",
     "http://*/*",
     "https://*/*"
   ],
@@ -29,8 +27,11 @@
   },
 
   "background": {
-    "persistent": true,
-    "page": "background.html"
+    "persistent": false,
+    "scripts": [
+      "scripts/storage.js",
+      "scripts/commentblocker.js"
+    ]
   },
 
   "options_page": "options.html",

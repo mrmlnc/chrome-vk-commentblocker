@@ -20,8 +20,7 @@ disableComments = ->
 # Event -> Update Tab
 #
 chrome.tabs.onUpdated.addListener (tabId, changeInfo, tab) ->
-  dataException = loadException()
-  listException = dataException['items']
+  listException = loadException().items
 
   if changeInfo.status is 'complete' and tab.url.indexOf('://vk.com/') > -1 and listException.length isnt 0
     chrome.tabs.executeScript tabId,

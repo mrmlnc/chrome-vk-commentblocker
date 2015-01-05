@@ -14,7 +14,6 @@ viewException = (data) ->
       (i + 1) + '>' + chrome.i18n.getMessage('exception_remove') + '</button>'
 
     tbody.appendChild(row)
-
   return tbody
 
 saveException = (title, url) ->
