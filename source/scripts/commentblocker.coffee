@@ -37,11 +37,13 @@ chrome.tabs.onUpdated.addListener (tabId, changeInfo, tab) ->
   listException = loadException().items
 
   if changeInfo.status is 'complete' and tab.url.indexOf('://vk.com/') > -1 and listException.length isnt 0
+    commentState = 0
     chrome.tabs.executeScript tabId,
       code: '(' + disableComments.toString() + ')();'
 
     for i in [0..listException.length - 1]
       if tab.url.indexOf(listException[i].url) > -1
+        commentState = 1
         chrome.tabs.executeScript tabId,
           code: '(' + enableComments.toString() + ')();'
         break
