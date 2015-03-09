@@ -4,7 +4,7 @@
   "name": "__MSG_app_name__",
   "short_name": "VKCommentBlocker",
   "description": "__MSG_app_description__",
-  "version": "0.6.2",
+  "version": "0.7.0",
 
   "default_locale": "ru",
 

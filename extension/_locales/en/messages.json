@@ -17,6 +17,9 @@
   "exception_add": {
     "message": "Adding exception"
   },
+  "exception_toggle_comment": {
+    "message": "Toggle comment"
+  },
   "exception_remove": {
     "message": "Remove exception"
   },

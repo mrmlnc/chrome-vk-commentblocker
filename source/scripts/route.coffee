@@ -1,8 +1,10 @@
 document.addEventListener "DOMContentLoaded", ->
   option = document.getElementById('goToOption')
   addExceptionPopup = document.getElementById('addExceptionPopup')
+  toggleComment = document.getElementById('toggleComment')
   url = ''
   title = ''
+  tabId = ''
 
   #
   # Event -> Click Option
@@ -19,6 +21,7 @@ document.addEventListener "DOMContentLoaded", ->
     active: true
   , (tabs) ->
     if tabs[0].url.indexOf('://vk.com/') > -1
+      tabId = tabs[0].id
       tabUrl = new URL(tabs[0].url)
       title = tabs[0].title
       url = tabUrl.pathname
@@ -37,4 +40,10 @@ document.addEventListener "DOMContentLoaded", ->
     localStorage['vkCommentBlockerTemp'] = JSON.stringify(data)
     window.open(chrome.extension.getURL('options.html'));
     return
-  return
+
+  #
+  # Toggle comment
+  #
+  toggleComment.addEventListener 'click', ->
+    chrome.extension.getBackgroundPage().stateCommentToggle tabId
+    return

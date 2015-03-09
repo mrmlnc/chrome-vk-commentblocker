@@ -17,6 +17,9 @@
   "exception_add": {
     "message": "Добавить исключение"
   },
+  "exception_toggle_comment": {
+    "message": "вкл/выкл комментарии"
+  },
   "exception_remove": {
     "message": "Удалить исключение"
   },
