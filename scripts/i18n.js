@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){for(var e=document.querySelectorAll("[data-i18n]"),t="",o=0;o<e.length;o++)(t=e[o].dataset.i18n)&&(e[o].innerHTML=chrome.i18n.getMessage(t))});
