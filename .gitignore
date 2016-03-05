@@ -1,5 +1,11 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE & editors
 .idea
-bower_components
-node_modules
-npm-debug.log
-build
+.vscode
+
+# Dependency directory
+node_modules/
