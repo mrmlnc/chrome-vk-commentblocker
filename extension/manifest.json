@@ -17,6 +17,14 @@
     "https://*/*"
   ],
 
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon-19.png",
+         "38": "images/icon-38.png"
+      },
+      "default_title": "__MSG_toolbar_button__"
+   },
+
   "background": {
     "persistent": false,
     "scripts": [
@@ -32,9 +40,15 @@
         "http://www.vk.com/*",
         "https://www.vk.com/*"
        ],
-      "css": [ "styles/main.css" ],
+      "css": [
+        "styles/main.css"
+      ],
       "run_at": "document_end",
       "all_frames": false
     }
+  ],
+
+  "web_accessible_resources": [
+    "styles/global-comments-off.css"
   ]
 }

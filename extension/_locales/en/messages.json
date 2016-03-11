@@ -4,5 +4,8 @@
   },
   "app_description": {
     "message": "A convenient way to hide comments in the news and groups."
+  },
+  "toolbar_button": {
+    "message": "Toggle comments"
   }
 }

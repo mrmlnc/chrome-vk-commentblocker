@@ -3,7 +3,7 @@ if (!document.body.classList.contains('vkcb')) {
   document.body.classList.add('vkcb');
 }
 
-function addButton() {
+function addButtons() {
   // Получение всех элементов-обёрток для комментариев
   const repliesEls = document.querySelectorAll('div.replies');
   [].forEach.call(repliesEls, (node) => {
@@ -42,15 +42,25 @@ function addButton() {
   });
 }
 
-// первый запуск
-addButton();
+chrome.runtime.sendMessage({
+  method: 'getLocalStorage'
+}, (res) => {
+  if (res.globalStatus === 'false') {
+    addButtons();
 
-// Слежение за изменением древа
-const observer = new MutationObserver(() => {
-  addButton();
-});
+    // Слежение за изменением древа
+    const observer = new MutationObserver(() => {
+      addButtons();
+    });
 
-observer.observe(document.getElementById('content'), {
-  childList: true,
-  subtree: true
+    observer.observe(document.getElementById('content'), {
+      childList: true,
+      subtree: true
+    });
+
+    return;
+  }
+
+  // Если требуется выключить все комментарии на сайте
+  document.body.classList.add('-global-off');
 });

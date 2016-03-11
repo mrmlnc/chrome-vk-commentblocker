@@ -35,4 +35,24 @@
       padding-left: 3px;
     }
   }
+
+  // Глобальное отключение комментариев
+  &.-global-off {
+    .wall_module .reply_link_wrap .reply_link {
+      visibility: hidden !important;
+    }
+
+    .wall_module .replies_wrap,
+    #wl_replies_wrap,
+    #wl_reply_form_wrap,
+    #mv_comments_wrap,
+    #mv_your_comment,
+    #pv_comments,
+    #pv_comments_header,
+    #pv_your_comment {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  }
 }
+
