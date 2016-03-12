@@ -29,6 +29,11 @@
       height: 14px;
       background: url("http://m.vk.com/images/post_buttons.png") no-repeat;
       background-position: -28px center;
+
+      @media only screen and (min-resolution: (1.5 * 96dpi)), only screen and (min-resolution: (1.5 * 1dppx)) {
+        background-image: url("http://m.vk.com/images/post_buttons_2x.png");
+        background-size: 188px 14px!important;
+      }
     }
 
     & > .desc {
