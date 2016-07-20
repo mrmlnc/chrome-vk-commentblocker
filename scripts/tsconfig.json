@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "classic",
+    "outDir": "../extension/scripts",
+    "noLib": false,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "declaration": false,
+    "watch": true
+  }
+}

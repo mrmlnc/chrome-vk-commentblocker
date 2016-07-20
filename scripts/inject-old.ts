@@ -1,3 +1,5 @@
+'use strict';
+
 // Если это первый запуск скрипта на странице
 if (!document.body.classList.contains('vkcb')) {
   document.body.classList.add('vkcb');
@@ -33,7 +35,7 @@ function addButtons() {
       // Создаём элемент для количества комментариев
       const bEl = document.createElement('b');
       bEl.innerText = commentCount;
-      bEl.className = 'desc';
+      bEl.className = 'counter';
       showEl.appendChild(bEl);
 
       // Вставляем кнопку в блок служебных ссылок поста
@@ -42,10 +44,8 @@ function addButtons() {
   });
 }
 
-chrome.runtime.sendMessage({
-  method: 'getLocalStorage'
-}, (res) => {
-  if (res.globalStatus === 'false') {
+chrome.runtime.sendMessage({ method: 'getLocalStorage' }, (res) => {
+  if (!res.globalStatus) {
     addButtons();
 
     // Слежение за изменением древа

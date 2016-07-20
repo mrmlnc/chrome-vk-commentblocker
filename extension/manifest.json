@@ -1,6 +1,5 @@
 {
   "manifest_version": 2,
-
   "name": "__MSG_app_name__",
   "short_name": "VKCommentBlocker",
   "description": "__MSG_app_description__",
@@ -10,28 +9,25 @@
     "128": "images/icon-128.png"
   },
   "default_locale": "ru",
-
   "permissions": [
     "tabs",
+    "activeTab",
     "http://*/*",
     "https://*/*"
   ],
-
-   "browser_action": {
-      "default_icon": {
-         "19": "images/icon-19.png",
-         "38": "images/icon-38.png"
-      },
-      "default_title": "__MSG_toolbar_button__"
-   },
-
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "__MSG_toolbar_button__"
+  },
   "background": {
     "persistent": false,
     "scripts": [
       "scripts/background.js"
     ]
   },
-
   "content_scripts": [
     {
       "matches": [
@@ -39,16 +35,25 @@
         "https://vk.com/*",
         "http://www.vk.com/*",
         "https://www.vk.com/*"
-       ],
+      ],
       "css": [
-        "styles/main.css"
+        "styles/main-old.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "http://new.vk.com/*",
+        "https://new.vk.com/*",
+        "http://www.new.vk.com/*",
+        "https://www.new.vk.com/*"
+      ],
+      "css": [
+        "styles/main-new.css"
       ],
       "run_at": "document_end",
       "all_frames": false
     }
-  ],
-
-  "web_accessible_resources": [
-    "styles/global-comments-off.css"
   ]
 }
