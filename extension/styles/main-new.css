@@ -18,6 +18,7 @@
   content: "";
   width: 14px;
   height: 14px;
+  margin-top: 2px;
   background: url("//m.vk.com/images/mobile/post_buttons.png") no-repeat;
   background-position: -28px center;
 }
