@@ -15,12 +15,8 @@ function setStatus(status) {
 }
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     if (changeInfo && changeInfo.status === 'complete' && tab.url.indexOf('vk.com') > -1) {
-        var version = 'new';
-        if (tab.url.indexOf('//vk.com') > -1) {
-            version = 'old';
-        }
         chrome.tabs.executeScript(tabId, {
-            file: "scripts/inject-" + version + ".js"
+            file: "scripts/inject.js"
         });
     }
 });

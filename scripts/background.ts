@@ -19,13 +19,8 @@ function setStatus(status: boolean): void {
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo && changeInfo.status === 'complete' && tab.url.indexOf('vk.com') > -1) {
-    let version = 'new';
-    if (tab.url.indexOf('//vk.com') > -1) {
-      version = 'old';
-    }
-
     chrome.tabs.executeScript(tabId, {
-      file: `scripts/inject-${version}.js`
+      file: `scripts/inject.js`
     });
   }
 });

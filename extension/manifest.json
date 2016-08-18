@@ -37,20 +37,7 @@
         "https://www.vk.com/*"
       ],
       "css": [
-        "styles/main-old.css"
-      ],
-      "run_at": "document_end",
-      "all_frames": false
-    },
-    {
-      "matches": [
-        "http://new.vk.com/*",
-        "https://new.vk.com/*",
-        "http://www.new.vk.com/*",
-        "https://www.new.vk.com/*"
-      ],
-      "css": [
-        "styles/main-new.css"
+        "styles/main.css"
       ],
       "run_at": "document_end",
       "all_frames": false
