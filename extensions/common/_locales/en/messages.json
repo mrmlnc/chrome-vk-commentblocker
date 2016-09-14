@@ -1,0 +1,11 @@
+{
+  "app_name": {
+    "message": "VK Silence"
+  },
+  "app_description": {
+    "message": "A convenient way to hide comments on photos, in the news and groups."
+  },
+  "toolbar_button": {
+    "message": "Toggle comments"
+  }
+}

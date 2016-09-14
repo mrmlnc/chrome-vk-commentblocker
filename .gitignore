@@ -6,6 +6,13 @@ npm-debug.log*
 # IDE & editors
 .idea
 .vscode
+typings/
+jsconfig.json
 
 # Dependency directory
 node_modules/
+bower_components/
+
+# Compiled and tempory files
+builds/
+.tmp/
