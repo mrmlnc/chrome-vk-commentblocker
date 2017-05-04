@@ -1,5 +1,7 @@
 # Vk Comment Blocker
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mrmlnc/chrome-vk-commentblocker.svg)](https://greenkeeper.io/)
+
 > VK Comment Blocker — это расширение для браузера Google Chrome, которое позволяет скрывать комментарии в ленте новостей и на страницах пользователей.
 
 ## Зачем?
